@@ -6,19 +6,35 @@ import styles from "../Components/styles/styles.module.css";
 
 const Navbar = () => {
     const [query,setQuery]=useState("")
-    const dispatch=useDispatch()
+    const [timer,setTimer]=useState(undefined)
 
-    const handlesearch=()=>{
-        dispatch(searchData(query))
+
+    const dispatch=useDispatch()
+    const handlesearch=(e)=>{
+        if(timer){
+            clearTimeout(timer)
+        }
+        setTimer(
+            setTimeout(()=>{
+                dispatch(searchData(e.target.value))
+                console.log("debounce=",e.target.value);
+
+            },300)
+        )
+        
     }
+
+     
+   
+    
 
     return (
         <>
         <div className={styles.parentinput}  >
 
            <div className={styles.inputclass} >
-           <input type="text" value={query}  onChange={(e)=>setQuery(e.target.value)} placeholder="search"/>
-            <button onClick={handlesearch}>search</button>
+           <input type="search"  onKeyUp={handlesearch} placeholder="search"/>
+            {/* <button onClick={handlesearch}>search</button> */}
            </div>
 
 

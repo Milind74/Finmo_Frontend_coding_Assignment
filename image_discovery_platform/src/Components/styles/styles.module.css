@@ -64,3 +64,18 @@ input {
     transition: 400ms;
     cursor: pointer;
 }
+
+.modal{
+    position: absolute;
+    top:50px;
+    left:300px;
+    width:600px;
+    height: 300px;
+    margin: auto; 
+
+}
+
+.modal img{
+    width:600px;
+    height: 500px;
+}
