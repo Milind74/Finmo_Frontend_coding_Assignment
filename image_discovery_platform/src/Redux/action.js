@@ -34,16 +34,21 @@ export const getDataFailure = (error) => {
     }
 }
 //using thunk to work between action and reducer
+//using thunk we can delay the execution of our function
 
 export const getData = () => dispatch => {
+    //requesting for data from reducer
     dispatch(getDataRequest())
     return axios.get("https://api.unsplash.com/search/photos?per_page=40&query=${search}&client_id=xRf-SuV5UAdpxw3s_YdLrGyYyn7IaUW8Q1UebZLhtyA")
 
         .then((res) => {
             console.log("get=", res.data)
+            //if we get result it will dispatch success request
             dispatch(getDataSuccess(res.data))
         })
         .catch((err) => {
+                        //if we get failure it will dispatch failure request
+
             dispatch(getDataFailure(err))
         })
 

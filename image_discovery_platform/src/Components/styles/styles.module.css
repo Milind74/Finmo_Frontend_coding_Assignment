@@ -183,3 +183,13 @@ a {
     letter-spacing: .4px;
     color: hsla(0, 0%, 100%, .5);
 }
+
+
+
+@media screen and (max-width: 650px) {
+   
+    .TrendingTagscontainer {
+        display: none;
+    }
+  }
+  

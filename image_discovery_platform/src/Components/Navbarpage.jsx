@@ -17,7 +17,7 @@ const Navbar = () => {
     setTimer(
       setTimeout(() => {
         dispatch(searchData(e.target.value));
-        console.log("debounce=", e.target.value);
+        // console.log("debounce=", e.target.value);
       }, 300)
     );
   };
@@ -37,7 +37,7 @@ const Navbar = () => {
             <div className={styles.TrendingTagslabel}>
               <span>Explore Tags</span>
             </div>
-            <a className={styles.TrendingTagslabelToggle}>MORE TAGS +</a>
+            <div  className={styles.TrendingTagslabelToggle}>MORE TAGS +</div>
           </div>
         </div>
 

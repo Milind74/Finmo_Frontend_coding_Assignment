@@ -9,7 +9,6 @@ const Dashboard = () => {
   const [open, setOpen] = useState(false);//hook for modal
   const [image, setImage] = useState("");//hook for modal
   const state = useSelector((state) => state.PhotosData.results);// useSelector hook used to select  the data from store
-  console.log("state=", state);
   const dispatch = useDispatch();//deispath function used to dispatch an action over here
 
   //dispatching an action over here inside useffect so that it would rended after component mount
@@ -17,6 +16,7 @@ const Dashboard = () => {
     dispatch(getData());
   }, [dispatch]);
 
+  
   //modal logic
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -58,7 +58,7 @@ const Dashboard = () => {
         aria-describedby="modal-modal-description"
       >
         <div className={styles.modal}>
-          <img src={image} alt="error loading image"></img>
+          <img src={image} alt="loading"></img>
         </div>
       </Modal>
     </>
