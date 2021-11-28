@@ -4,9 +4,12 @@ import { searchData } from "../Redux/action";
 import styles from "../Components/styles/styles.module.css";
 
 const Navbar = () => {
-  const [timer, setTimer] = useState(undefined);
 
-  const dispatch = useDispatch();
+  const [timer, setTimer] = useState(undefined);//state for debouncing
+
+  const dispatch = useDispatch();//dispath used to triger an action
+
+  //search functionality for searching and as well as debouncing
   const handlesearch = (e) => {
     if (timer) {
       clearTimeout(timer);

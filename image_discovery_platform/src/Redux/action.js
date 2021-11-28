@@ -33,6 +33,7 @@ export const getDataFailure = (error) => {
         payload: error
     }
 }
+//using thunk to work between action and reducer
 
 export const getData = () => dispatch => {
     dispatch(getDataRequest())
