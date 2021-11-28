@@ -18,7 +18,6 @@ import {GETDATA_FAILURE,GETDATA_REQUEST,GETDATA_SUCCESS,
         }
         
         export const getDataFailure = (error) => {
-    
             return {
                 type:GETDATA_FAILURE,
                 payload:error
@@ -72,8 +71,7 @@ import {GETDATA_FAILURE,GETDATA_REQUEST,GETDATA_SUCCESS,
                     })
                     .catch((err)=>{
                         dispatch(searchDataFailure(err))
-                    })
-    
+                    })  
                 }
     
   
