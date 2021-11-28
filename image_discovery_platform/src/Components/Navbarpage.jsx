@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import { useDispatch } from 'react-redux'
 import { searchData } from '../Redux/action'
+import styles from "../Components/styles/styles.module.css";
 
 
 const Navbar = () => {
@@ -13,13 +14,17 @@ const Navbar = () => {
 
     return (
         <>
-        <div style={{border:"1px solid black",height:"40px",width:"100%",display:"flex",justifyContent:"space-evenly"}}>
-           <div >
-           <input style={{height:"30px"}} type="text" value={query}  onChange={(e)=>setQuery(e.target.value)} placeholder="search"/>
+        <div className={styles.parentinput}  >
+
+           <div className={styles.inputclass} >
+           <input type="text" value={query}  onChange={(e)=>setQuery(e.target.value)} placeholder="search"/>
             <button onClick={handlesearch}>search</button>
            </div>
+
+
+           </div>
+
         
-        </div>
       
 
         
