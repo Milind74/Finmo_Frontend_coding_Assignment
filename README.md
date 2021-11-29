@@ -7,7 +7,8 @@
 
 
 <h4>DEMO</h4>
-<a style="text-decoration: none;" href="">DEMO</a>
+  
+<a style="text-decoration: none;" href="https://finmoassignment.netlify.app/">DEMO</a>
 
 <p>Fullscreen mode</p>
 <p> Fully responsive( supported in all devices)</p>
