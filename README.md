@@ -23,6 +23,7 @@
 <p>material ui</p>
 <p>Thunk</p>
 <p>styled components</p>
+<p>font awesome</p>
 
 
 
