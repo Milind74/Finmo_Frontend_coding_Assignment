@@ -10,8 +10,6 @@
   
 <a style="text-decoration: none;" href="https://finmoassignment.netlify.app/">DEMO</a>
 
-<p>Fullscreen mode</p>
-<p> Fully responsive( supported in all devices)</p>
 
 <h2>🛠 Tech Stack</h2>
 <p>html</p>
