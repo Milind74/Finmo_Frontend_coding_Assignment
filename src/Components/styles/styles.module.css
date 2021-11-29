@@ -77,10 +77,10 @@ input {
     margin: auto;
 
     border-radius: 10px;
-
 }
 
 .modal img {
+
     width: 600px;
     height: 500px;
     border-radius: 10px;
@@ -182,6 +182,13 @@ a {
     line-height: 1.46;
     letter-spacing: .4px;
     color: hsla(0, 0%, 100%, .5);
+}
+
+.icons{
+    margin-top: -50px;
+    margin-left: 550px;
+    font-size:x-large;
+    color: white;
 }
 
 
