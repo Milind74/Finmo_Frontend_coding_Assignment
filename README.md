@@ -6,7 +6,7 @@
 <br>
 
 
-<h4>DEMO</h4>
+<h4>DEMO OF THE ASSIGNMENT</h4>
   
 <a style="text-decoration: none;" href="https://finmoassignment.netlify.app/">DEMO</a>
 
