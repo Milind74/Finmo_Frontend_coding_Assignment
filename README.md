@@ -19,6 +19,7 @@
 <p>Redux</p>
 <p>material ui</p>
 <p>Thunk</p>
+<p>styled components</p>
 
 
 
