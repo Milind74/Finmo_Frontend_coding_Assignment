@@ -8,6 +8,10 @@
 
 <h4>DEMO OF THE ASSIGNMENT</h4>
   
+  <p>searching functionality implemented</p>
+  <p>please hover on images to see the effect as well </p>
+  <p> If you wanna a see the image in large please click on image to see the image </p> 
+  
 <a style="text-decoration: none;" href="https://finmoassignment.netlify.app/">DEMO</a>
 
 
